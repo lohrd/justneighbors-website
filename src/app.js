@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Home from './pages/home'
+import Home from './components/Pages/Home'
 import Image from './images/monterrey.jpeg'
 
 // const backgroundImage = require('./images/monterrey.jpeg');
@@ -18,7 +18,7 @@ const test = "hello world!"
 
 const App = () => {
     return (
-        <div className="background" style={{    backgroundImage: `url(${Image})`}} >
+        <div className="background" style={{backgroundImage: `url(${Image})`}} >
 
             <Home></Home>
         </div>
