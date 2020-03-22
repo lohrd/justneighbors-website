@@ -1,17 +1,28 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './pages/home'
+import Image from './images/monterrey.jpeg'
+
+// const backgroundImage = require('./images/monterrey.jpeg');
+// const backgroundStyle = {
+//     backgroundImage: `url(${Image})`,
+//     backgroundPosition: 'center center',
+//     backgroundRepeat: 'no-repeat',
+//     backgroundAttachment: 'fixed',
+//     backgroundSize: 'cover',
+//     backgroundColor: '#040405'
+// }
 
 
-const App = (props) => {
+const test = "hello world!"
+
+const App = () => {
     return (
-        <div>
-            <p>this is example text</p>
+        <div className="background" style={{    backgroundImage: `url(${Image})`}} >
+
+            <Home></Home>
         </div>
     )
 }
 
-ReactDOM.render(
-    <App></App>,
-    document.getElementById('root')
-    );
-  
+export default App;
