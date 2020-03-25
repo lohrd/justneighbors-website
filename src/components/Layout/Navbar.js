@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({icon, title}) => {
     return (
-        <nav className='navbar bg-primary'>
+        <nav className='navbar'>
             <h1>
                 <i className={icon}></i> {title}
             </h1>
@@ -12,12 +12,14 @@ const Navbar = ({icon, title}) => {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/About'>About</Link>
+                    <Link to='/about'>About</Link>
                 </li>
                 <li>
-                    <Link to='/Contact'>Contact Us</Link>
+                    <Link to='/contact'>Contact Us</Link>
                 </li>
             </ul>
         </nav>
     )
 }
+
+export default Navbar
