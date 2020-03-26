@@ -5,7 +5,8 @@ import { IContactDao } from "./ContactDao";
 import { Repository, getRepository } from "typeorm";
 import Contact from "./Contact";
 
-import "../tiers/presentation-layer/controllers/ContactController" // auto-binding courtesy of the utils
+import "./ContactController" // auto-binding courtesy of the utils
+
 
 export const bindings = new ContainerModule(bind => {
 

@@ -1,11 +1,11 @@
 import * as React from 'react';
 import '../../styles.css';
-import Image from '../../images/monterrey.jpeg'
 
 
-const Home = () => {
+
+const Home = (props) => {
     return (
-        <div className="background" style={{backgroundImage: `url(${Image})`}} >
+        <div className="background" style={{backgroundImage: `url(${props.homeImage})`}} >
 
         </div>
     )

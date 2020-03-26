@@ -10,22 +10,12 @@ import Navbar from './components/Layout/Navbar'
 
 const App = () => {
     return (
-        <Router>
+
             <div>
             <Navbar></Navbar>
-            <Switch>
-                <Route>
-                    <Home></Home>
-                </Route>
-                <Route>
-                    <About></About>
-                </Route>
-                <Route>
-                    <Contact></Contact>
-                </Route>
-            </Switch>
+
             </div>
-        </Router>
+
     )
 }
 

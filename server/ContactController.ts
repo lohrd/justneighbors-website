@@ -25,7 +25,7 @@ export class ContactController implements interfaces.Controller {
   @inject(TYPES.IContactDao)
   readonly contactDao: IContactDao;
 
-  @httpPost("/", validate(ContactValidator.createContact))
+  @httpPost("/")
   async createContact(@requestBody() newContact: Contact, req: express.Request, res: express.Response): Promise<Contact> {
     const savedContact = await this.contactDao.save(newContact)
 
