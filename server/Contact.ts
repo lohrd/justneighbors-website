@@ -6,7 +6,7 @@ export default class Contact {
     @Column()
     name: string;
     @Column()
-    age: number;
-    @Column()
     email: string;
+    @Column()
+    message: string;
 }
