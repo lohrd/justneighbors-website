@@ -33,16 +33,3 @@ export class ContactController implements interfaces.Controller {
     return savedContact
   }
 }
-
-
-
-
-// class DanPayload {
-//   name: string;
-//   age: number;
-
-// }
-
-// class ContactViewModel {
-//   constructor(public name?: string, public age?: number) {}
-// }
