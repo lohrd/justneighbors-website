@@ -1,4 +1,4 @@
-# portfolio-website
+# justneighbors-website
 
 This is a website made for the band 'Just Neighbors'. It has three pages: a home page, an about page, and a contact page. 
 
