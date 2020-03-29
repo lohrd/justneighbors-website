@@ -3,7 +3,8 @@ import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import {
-    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
+    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, 
+    MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
     } from "mdbreact";
 import Home from '../Pages/Home'
@@ -32,44 +33,43 @@ const Styles = styled.div`
 `;
 
 const NavigationBar = () => {
-    return (
-              <Router>
-                <MDBNavbar color="grey" dark expand="md">
-                  <MDBNavbarBrand className="white-text">
-                    <MDBNavLink to="/">Just Neighbors</MDBNavLink>
-                    {/* <strong className="white-text">Just Neighbors</strong> */}
-                  </MDBNavbarBrand>
-                  <MDBNavbarToggler/>
-                  <MDBCollapse id="navbarCollapse3" navbar>
-                    <MDBNavbarNav right>
-                      <MDBNavItem>
-                        <MDBNavLink to="/">Home</MDBNavLink>
-                      </MDBNavItem>
-                      <MDBNavItem>
-                        <MDBNavLink to="/about">About</MDBNavLink>
-                      </MDBNavItem>
-                      <MDBNavItem>
-                        <MDBNavLink to="/contact">Contact</MDBNavLink>
-                      </MDBNavItem>
-                    </MDBNavbarNav>
-                  </MDBCollapse>
-                </MDBNavbar>
-                <Switch>
-                <Route exact path="/">
-                    <Home homeImage={HomeImage}></Home>
-                </Route>
-                <Route path="/about">
-                    <About aboutImage={AboutImage}></About>
-                </Route>
-                <Route path="/contact">
-                    <Contact contactImage={ContactImage}></Contact>
-                </Route>
-            </Switch>
-              </Router>
-              );
-            }
-          
-          
+  return (
+    <Router>
+      <MDBNavbar color="grey" dark expand="md">
+        <MDBNavbarBrand className="white-text">
+          <MDBNavLink to="/">Just Neighbors</MDBNavLink>
+          {/* <strong className="white-text">Just Neighbors</strong> */}
+        </MDBNavbarBrand>
+        <MDBNavbarToggler/>
+        <MDBCollapse id="navbarCollapse3" navbar>
+          <MDBNavbarNav right>
+            <MDBNavItem>
+              <MDBNavLink to="/">Home</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="/about">About</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="/contact">Contact</MDBNavLink>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
+      <Switch>
+        <Route exact path="/">
+            <Home homeImage={HomeImage}></Home>
+        </Route>
+        <Route path="/about">
+            <About aboutImage={AboutImage}></About>
+        </Route>
+        <Route path="/contact">
+            <Contact contactImage={ContactImage}></Contact>
+        </Route>
+      </Switch>
+    </Router>
+    );
+  }
+                 
 export default NavigationBar;
 
 

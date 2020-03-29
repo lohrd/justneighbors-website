@@ -1,4 +1,5 @@
 import * as Joi from "joi";
+
 class ContactValidator {
   createContact= {
     body: {
@@ -8,4 +9,5 @@ class ContactValidator {
     }
   }
 }
+
 export default new ContactValidator();

@@ -27,9 +27,7 @@ export class ContactController implements interfaces.Controller {
 
   @httpPost("/")
   async createContact(@requestBody() newContact: Contact, req: express.Request, res: express.Response): Promise<Contact> {
-    const savedContact = await this.contactDao.save(newContact)
-
-
+    const savedContact = await this.contactDao.save(newContact);
     return savedContact
-  }
-}
+  };
+};

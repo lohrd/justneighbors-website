@@ -7,9 +7,7 @@ import Contact from "./Contact";
 
 import "./ContactController" // auto-binding courtesy of the utils
 
-
 export const bindings = new ContainerModule(bind => {
-
     bind<IContactDao>(TYPES.IContactDao).to(ContactDao);
     bind<Repository<Contact>>(TYPES.IContactRepository).toDynamicValue(() => {
         return getRepository(Contact);

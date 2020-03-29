@@ -11,9 +11,6 @@ import AboutImage from './images/band_wall.jpeg'
 import ContactImage from './images/JapanContact.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
 const App = () => {
     return (
         <div>
@@ -24,24 +21,3 @@ const App = () => {
 }
 
 export default App;
-
-
-{/* <React.Fragment>
-<NavigationBar>
-    <Layout>
-        <Router>
-            <Switch>
-                <Route exact path="/">
-                    <Home homeImage={HomeImage}></Home>
-                </Route>
-                <Route path="/about">
-                    <About aboutImage={AboutImage}></About>
-                </Route>
-                <Route path="/contact">
-                    <Contact contactImage={ContactImage}></Contact>
-                </Route>
-            </Switch>
-        </Router>
-    </Layout>
-</NavigationBar>
-</React.Fragment> */}

@@ -35,6 +35,7 @@ const MyButton = styled(Button)({
     height: 48,
     padding: '0 30px'
   });
+  
 const Contact = (props) => {
     const classes = useStyles();
     const [contact, setContact] = React.useState({})
@@ -47,29 +48,23 @@ const Contact = (props) => {
         const contactSDK = new ContactSDK();
         const newContact = await contactSDK.createContact({name, email, message});
         setContact(newContact);
-    }
-
+    };
     const addName = (event) => setName(event.target.value);
     const addEmail = (event) => setEmail(event.target.value);
     const addMessage = (event) => setMessage(event.target.value);
-
     React.useEffect(() => {
-        console.log("hi");
-    
-      }, [])
+        console.log("Component has mounted");
+      }, []);
     return (
         <div className="background" style={{backgroundImage: `url(${props.contactImage})`}}>   
-
             <Grid container spacing={4} align="center" alignItems="center" justify="center" direction="column" className={classes.container}> 
-                    <Grid item><TextField className={classes.root} variant="filled" onChange={addName} value={name}  InputProps={{className: classes.input}}></TextField></Grid>
-                    <Grid item><TextField className={classes.root} variant="filled" onChange={addEmail} value={email} InputProps={{className: classes.input}}></TextField></Grid>
-                    <Grid item><TextField margin='normal' className={classes.root} variant="filled" onChange={addMessage} value={message} multiline rows="4" InputProps={{className: classes.input}}></TextField></Grid>
-                    <Grid item><MyButton onClick={newContactRequest}>Submit</MyButton></Grid>
+                <Grid item><TextField className={classes.root} variant="filled" onChange={addName} value={name}  InputProps={{className: classes.input}}></TextField></Grid>
+                <Grid item><TextField className={classes.root} variant="filled" onChange={addEmail} value={email} InputProps={{className: classes.input}}></TextField></Grid>
+                <Grid item><TextField margin='normal' className={classes.root} variant="filled" onChange={addMessage} value={message} multiline rows="4" InputProps={{className: classes.input}}></TextField></Grid>
+                <Grid item><MyButton onClick={newContactRequest}>Submit</MyButton></Grid>
             </Grid>
-        
-
         </div>
-    )
-}
+    );
+};
 
 export default Contact; 
