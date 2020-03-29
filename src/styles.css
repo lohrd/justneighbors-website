@@ -44,7 +44,7 @@
 
  .background {
     height: 100vh;
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -69,7 +69,7 @@
     padding: 40px;
 }
 
-.navbar {
+/* .navbar {
     background-color: blue !important;
     display: flex;
     justify-content: space-between;
@@ -98,4 +98,4 @@ color: var(--light-color);
 
 .navbar .welcome span {
 margin-right: 0.6rem;
-}
+} */
