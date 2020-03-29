@@ -9,4 +9,4 @@ export default class Contact {
     email: string;
     @Column()
     message: string;
-}
+};
