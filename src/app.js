@@ -4,6 +4,7 @@ import Home from './components/Pages/Home'
 import About from './components/Pages/About'
 import Contact from './components/Pages/Contact'
 import Layout from './components/Layout/Layout'
+import NavbarMatUI from './components/Layout/NavbarMatUI'
 import NavigationBar from './components/Layout/NavBarStyle'
 import Navbar from './components/Layout/Navbar'
 import HomeImage from './images/monterrey.jpeg'
@@ -14,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
     return (
         <div>
-            <NavigationBar></NavigationBar>
+            <NavbarMatUI></NavbarMatUI>
         </div>
 
     )
