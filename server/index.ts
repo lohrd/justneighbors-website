@@ -26,12 +26,13 @@ const runServerApp = async () => {
   });
   const container = new Container();
   container.load(bindings);
-  const appExpress = express();
-  const router = require('express-promise-router')();
-  appExpress.use('/', router);
-  appExpress.use(express.static('dist'));
-  const server = new InversifyExpressServer(container, appExpress);
+  // const appExpress = express();
+  // const router = require('express-promise-router')();
+  // appExpress.use('/', router);
+
+  const server = new InversifyExpressServer(container);
   server.setConfig(app => {
+    app.use(express.static('dist'));
     app.use(cors());
     // Add the authentication middleware.
     app.options("*", cors());
