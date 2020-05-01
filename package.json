@@ -18,7 +18,7 @@
     "inversify": "^5.0.1",
     "inversify-express-utils": "^6.3.2",
     "joi": "^14.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mdbreact": "^4.25.4",
     "node": "^13.10.1",
     "nodemailer": "^6.4.6",
